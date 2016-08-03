@@ -5,9 +5,11 @@
 # When user using vnc connecting to virtual machine, there will be two mouse
 # cursors overlap together, and you will see "cursor drifting" when move your
 # mouse in heavy network latency. This scipt is aim to improve user experience
-# under this circumstances
+# under this circumstances(Target to linux system with Xorg server), without
+# any other affection to the whole system.
 #
 # Copyright (c) 2016 FUJITSU LIMITED
+# Copyright (c) Cao jin
 # Author: Cao jin <caoj.fnst@cn.fujitsu.com>
 #
 # TBD:
