@@ -67,7 +67,7 @@ x_pattern=
 if [ "$UID" -ne "$ROOT_UID" ]
 then
     echo "Must be root to run this script."
-    exit 88
+    exit
 fi
 
 show_help () {
@@ -100,7 +100,6 @@ TestPS() {
     then
         echo "There should be at least 2 lines in output of ps. Bye~"
         return $R_GENERAL_FAIL
-        #exit 88
     else
         _logx "There is 2 or more lines in the output. Ok"
         return $R_GENERAL_OK
@@ -185,7 +184,7 @@ CheckStatus() {
         _logx "Enter $x_dir to check current status"
     else
         echo "No dir $x_dir? Bye~"
-        exit 88
+        exit
     fi
 
     if [[ "$x_bin" =~ "$x_suffix" ]] && [[ $x_bin =~ "$x_pattern" ]]
