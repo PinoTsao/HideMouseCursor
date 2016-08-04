@@ -32,6 +32,7 @@ case list
 8. 基于 6 重复revert                  失败            ok
 
 二. 无cursor场景(即已Hacked)
+
 1. 执行脚本hack X                     失败            ok
 2. 基于1， 重复hack                   失败            ok
 
