@@ -18,6 +18,7 @@
 说明：期望结果包括：正确的输出信息，以及脚本执行后的输出产物
 
 case list
+
 一. 有cursor场景                    期望结果      实际结果
 
 1. 执行脚本Hack X                     成功            ok
@@ -41,24 +42,45 @@ case list
 7. 基于6，revert                      成功            ok
 
 Reference: Xorg Server 版本/发布时间 对照
+
 Version 	Date
+
 1.0 	    21 December 2005
+
 1.1 	    22 May 2006
+
 1.2 	    22 January 2007
+
 1.3 	    19 April 2007
+
 1.4 	    6 September 2007
+
 1.5 	    3 September 2008
+
 1.6 	    25 February 2009
+
 1.7 	    1 October 2009
+
 1.8 	    2 April 2010
+
 1.9 	    20 August 2010
+
 1.10 	    25 February 2011
+
 1.11 	    26 August 2011
+
 1.12 	    4 March 2012
+
 1.13 	    5 September 2012
+
 1.14 	    5 March 2013
+
 1.15 	    27 December 2013
+
 1.16 	    17 July 2014
+
 1.17 	    4 February 2015
+
 1.18 	    9 November 2015
+
 1.19 	    N/A
