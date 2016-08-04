@@ -14,7 +14,7 @@
 #
 # TBD:
 # 1. make X server executive name pattern as input param. This feature could be
-#    add according to the requirement.
+#    added according to the requirement.
 #
 # Limitation:
 # 1. This script is developed & tested under bash 4.3, not sure it will works
@@ -59,8 +59,6 @@ x_dir=
 x_bin=
 x_suffix=".orig"
 x_newbin=
-#testx=
-#return_val=
 
 X_patterns=("Xorg" "X")
 x_pattern=
