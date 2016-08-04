@@ -59,8 +59,6 @@ x_dir=
 x_bin=
 x_suffix=".orig"
 x_newbin=
-#testx=
-#return_val=
 
 X_patterns=("Xorg" "X")
 x_pattern=
