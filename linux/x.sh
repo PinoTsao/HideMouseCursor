@@ -9,8 +9,8 @@
 # any other affection to the whole system.
 #
 # Copyright (c) 2016 FUJITSU LIMITED
-# Copyright (c) Cao jin
-# Author: Cao jin <caoj.fnst@cn.fujitsu.com>
+# Copyright (c) Cao jin <caoj.fnst@cn.fujitsu.com>
+# Author: Cao jin <pino.cao1984@gmail.com>
 #
 # TBD:
 # 1. make X server executive name pattern as input param. This feature could be
@@ -25,7 +25,6 @@
 # 3. This script only works with X Windows(Xorg) started, or else it won't work
 #
 # Usage:
-#
 # We now just support the basic two functionality, hack X to hide mouse cursor,
 # and revert the hacking. So the usage is very simple as following:
 #
@@ -33,7 +32,6 @@
 #    `./x.sh`    or    `bash ./x.sh`
 # 2. Revert what we hack
 #    `./x.sh -r`    or    `bash ./x.sh -r`
-#
 
 ROOT_UID=0
 
@@ -98,7 +96,7 @@ TestPS() {
     local lines=`echo "$ps_output" | wc -l`
     if [ $lines -lt 2 ]
     then
-        echo "There should be at least 2 lines in output of ps. Bye~"
+        echo "Oops! There should be at least 2 lines in output of ps."
         return $R_GENERAL_FAIL
     else
         _logx "There is 2 or more lines in the output. Ok"
@@ -376,16 +374,12 @@ SPT
     echo "Hacking done, please reboot the system."
 }
 
-
 # handle option & arguement
 while getopts ":r" optname
 do
     case "$optname" in
         r ) x_op=$X_OP_REVERT
             _logx "Going to revert"
-
-            # no matter success or not, after revert, exit
-            #exit
             ;;
         * ) echo -e "Unimplemented option chosen: $OPTARG\n"
             show_help
@@ -413,9 +407,7 @@ then
     HackX
 elif [ $x_op -eq $X_OP_REVERT ]
 then
-    # Revert
     RevertX
 else
     echo "Impossible to be here!"
 fi
-
